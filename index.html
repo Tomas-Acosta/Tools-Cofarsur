@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="icon" type="image/png" href="favicon.png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>COFARSUR VM</title>
+  <!-- insert css with php -->
+  <?!= include('stylesheet'); ?>
+
+</head>
+
+<body>
+
+  <nav id="navbar">
+    <div class="img-title">
+      <img src="https://www.cofarsur.net/inicio/wp-content/uploads/2021/01/cofarsur-logoblanco.png" class="img-responsive">
+      <p class="title-villa-maria" style="text-decoration: none" ;> - VILLA MARIA</p>
+    </div>
+    <div id="header">
+      <ul class="links">
+        <li id="planillas" class="nav-li"><a href="#">PLANILLAS</a>
+          <ul class="primer-ul">
+            <li><a href="#" onclick="openSheet('1s9KMgLnlJW2usXH_zaNf1JJelSDQtoJGX5hHLFcudh0')">REPARTO</a></li>
+            <li><a href="#" onclick="openSheet('1dqtwreNyFpIJzyzd80kEZx0Ud4-Z2LtTaFQFPKlatJc')">VENCIMIENTO</a></li>
+            <li><a href="#"
+                onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSeWCSE5M3-HEWx2ESqWRreqmXYxUqgRan8d4QI335DXdlc5Ug/viewform', '_blank')">REGISTRAR
+                VENCIMIENTO</a></li>
+            <li><a href="#" onclick="openSheet('1mGTJncV-zWkdYttzH_I4TT3PEYFa6-I-Bw6KKKUwlog')">ROTULADOR</a></li>
+            <li><a href="#">TEMPERATURAS</a>
+              <ul class="segundo-ul">
+                <li><a href="#"
+                    onclick="openWindowPopUp('https://docs.google.com/forms/d/e/1FAIpQLSdloxkxKShjBLDACkkwJO-d-h6Y5oL0FE2_gn3kPbTsfYWhzg/viewform?usp=sf_link')">CARGAR
+                    TEMPERATURAS</a></li>
+                <li><a href="#" onclick="openSheet('1zijYvZeP4lgTqq9Tn5dHlsRnT-tDi8KIe3uJT7QQNA4')">VER
+                    TEMPERATURAS</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li id="farmaceutica"><a href="#" class="nav-li">FARMACEUTICA</a>
+          <ul>
+            <li><a href="#"
+                onclick="window.open('https://drive.google.com/drive/u/0/folders/1euaEjcwmT7JLDvUnOxWpJowwR38ul7xI', '_blank')">DRIVE
+                - DROPBOX</a></li>
+            <li><a href="#" onclick="window.open('https://www.cofarsur.net/formularios/psi_vma.pdf')">VALE
+                PSICOTROPICO</a></li>
+            <li><a href="#" onclick="window.open('https://www.cofarsur.net/formularios/est_vma.pdf')">VALE
+                ESTUPEFACIENTE</a></li>
+          </ul>
+        </li>
+        <li id="transporte"><a href="#" class="nav-li">TRANSPORTE</a>
+          <ul>
+            <li><a href="tel:+543534407811">ROJAS</a></li>
+            <li><a href="tel:+543534296073">CEFERINO</a></li>
+            <li><a href="tel:+543534202345">VICTOR - BERTOGLIO</a></li>
+            <li><a href="tel:+543585099612">RUBIOLO</a></li>
+          </ul>
+        </li>
+        <li id="contacto"><a href="#" class="nav-li">CONTACTOS</a>
+          <ul>
+            <li><a href="#"
+                onclick="window.open('https://docs.google.com/spreadsheets/d/1PVj3FZG2YdunkUAoykc9WEhqXggHT3pL6TmkY9SF4T4/edit#gid=0', '_blank')">CLIENTES</a>
+            </li>
+
+            <li>
+              <a href="tel:08103338888">
+                <h4>URGENCIA / EMERGENCIA</h4>
+                &nbsp
+                <p>VITTAL: 0810 333 8888</p>
+              </a>
+            </li>
+            <li><a href="tel:08007777278">
+                <h4>ART - ACCIDENTE LABORAL</h4>
+                &nbsp
+                <p>EXPERTA: 0800 777 7278 Op1</p>
+              </a>
+            </li>
+            <li><a href="#">
+                <h4>ATTE AL CLIENTE</h4>
+              </a>
+              <ul id="atencion-al-cliente">
+                <a href="https://wa.me/5493516172914" target="_blank">Whatsapp: 351-617-2914</a>
+                <a href="tel:08004440223">Llamadas: 0800-444-0233</a>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li id="extras"><a href="#" class="nav-li">INSTITUCIONAL</a>
+          <ul>
+            <li><a href="#"
+                onclick="window.open('https://www.cofarsur.net/inicio/entre-nosotros-cofarsur/', '_blank')">ENTRE
+                NOSOTROS</a></li>
+            </ul>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div id="contenedorPrincipal" class="calendar-and-weather">
+    <div class="weather">
+      <a class="weatherwidget-io" href="https://forecast7.com/es/n32d41n63d24/villa-maria/" data-label_1="VILLA MARÍA"
+        data-label_2="Cordoba" data-theme="original">VILLA MARÍA Cordoba</a>
+    </div>
+    <div class="calendar">
+      <iframe src="https://embed.styledcalendar.com/#zaNJhJ9yOikOyMJF9434" title="Styled Calendar"
+        class="styled-calendar-container" style="width: 100%; border: none;" data-cy="calendar-embed-iframe"></iframe>
+    </div>
+  </div>
+
+  <!-- insert javascript with php-->
+  <?!= include('js'); ?>
+</body>
+
+</html>
