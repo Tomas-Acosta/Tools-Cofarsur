@@ -1,0 +1,187 @@
+<style>
+  * {
+    padding: 0;
+    margin: 0;
+  }
+
+  /* Star style navbar */
+  #navbar {
+    background-color: #096176;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    /* Align items vertically in the center */
+  }
+
+
+  .img-responsive {
+    height: 50px;
+    margin-left: 5px;
+    margin-top: 5px;
+  }
+
+  .title-villa-maria {
+    font-size: 25px;
+    text-align: center;
+    margin: 0.5px 0;
+    margin-right: 20px;
+    padding-top: 26px;
+    padding-left: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: white;
+    justify-content: center;
+    margin-top: 0;
+    flex: none;
+  }
+
+  .img-title {
+    display: flex;
+    flex-direction: row;
+    height: 70px;
+  }
+
+  .links {
+    margin-left: auto;
+    display: flex;
+    /* Push the links to the right by using auto margin on the left */
+  }
+
+  .links>li {
+    padding: 0px;
+    background-color: #096176;
+    float: left;
+  }
+
+  li,
+  ul {
+    list-style: none;
+  }
+
+  .links li a {
+    background-color: #096176;
+    text-decoration: none;
+    display: block;
+    padding: 25px 1.5vw;
+    font-family: Arial, sans-serif;
+    color: white;
+    justify-content: center;
+  }
+
+  .links li a:hover {
+    background-color: #0C84A0;
+  }
+
+  .links li ul {
+    display: none;
+    position: absolute;
+    min-width: 100px;
+  }
+
+  .links li:hover>ul {
+    display: block;
+    z-index: 2;
+  }
+
+  .links li ul li:hover>.segundo-ul {
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+  }
+
+  /* Star style down divs */
+  .calendar-and-weather {
+    display: flex;
+  }
+
+  .weather,
+  .calendar {
+    margin: 1.5px;
+  }
+
+  .weather {
+    width: 18%;
+    height: 50%;
+    max-width: 300px;
+  }
+
+  .calendar {
+    margin-top: 1.5px;
+    width: 83%;
+    margin-left: 10px;
+  }
+
+  /* Common styles for both screen sizes */
+  .metrics,
+  iframe {
+    border-radius: 5px;
+    border: 2px;
+    border-color: black;
+  }
+
+  iframe {
+    border: none;
+    height: 95%;
+    user-select: none;
+  }
+
+  iframe::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Styles for smaller screens */
+  @media screen and (max-width: 767px) {
+    body {
+      width: 100%;
+    }
+
+    #navbar {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .navbar {
+      width: auto;
+      z-index: 2;
+      margin-left: 0px;
+      margin-top: 10px;
+    }
+
+    #header {
+      display: flex;
+      font-size: 2.5vw;
+      font-weight: bold;
+      margin-left: -5px;
+    }
+
+    .links li a {
+      background-color: #096176;
+      text-decoration: none;
+      display: block;
+      padding: 25px 1.5vw;
+      font-family: Arial, sans-serif;
+      color: white;
+      justify-content: center;
+    }
+
+    .calendar-and-weather {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .weather {
+      width: 100%;
+      display: block;
+      min-width: 100vw;
+    }
+
+    .calendar {
+      margin-top: 1.5px;
+      width: 100%;
+      min-width: 100vw;
+      margin-left: -5px;
+    }
+  }
+</style>
